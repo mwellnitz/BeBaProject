@@ -1,0 +1,11 @@
+body   {
+   color:blue;
+   background-color:#EAECEC;
+   margin:20px;
+}
+div { border:1px solid grey; }
+tr { background-color:#CCDDEE;}
+#header         	{ height: 50px;       }
+#navi 		{ height: 25px;       }
+#content       	{ min-height: 200px;  }
+#footer         	{ height: 50px;       }

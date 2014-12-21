@@ -2,7 +2,7 @@
 include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 		// display the list of all maschines in table view
-        $sql = "SELECT * FROM maschienen ORDER BY idMaschienenanan ASC";
+        $sql = "SELECT * FROM maschienen ORDER BY idMaschienenanan ASC;";
         $query = mysql_query($sql) or die(mysql_error());
 
 echo "<table border = 1>";

@@ -38,7 +38,7 @@ include("connect.php");
           <li><a href="mitarbeiter.php">Mitarbeiter</a></li>
           <li><a href="Maschinen.php">Maschinen</a></li>
           <li class="selected"><a href="Betriebsdaten.php">Betriebsdaten</a></li>
-          <li><a href="anmeldung.php">Sign In</a></li>
+          <li><a href="anmeldung.php">Anmeldung</a></li>
 		  <li><a href="logout.php">Logout</a></li>
         </ul>
       </div>
@@ -71,17 +71,33 @@ include("connect.php");
       </div>
       <div id="content">
 		<p>Maschinenwartung:</p>
-        <table style="width:100%; border-spacing:0;">
-		<Form action="add_maschinenwartung.php" method="post">
-          <tr><th>idMaschienenwartung<input type="text" name="idMaschienenwartung"/></th><th>idMaschinen<input type="text" name="Maschienen_idMaschienenanan"/></th><th>Mitarbeiterid<input type="text" name="Mitarbeiter_idMitarbeiter"/></th><th>Datum<input type="text" name="Datum"/></th><th>Arbeitsbeschreibung<input type="text" name="Arbeitsbeschreibung"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		  </table>
-		  <fieldset class="field_container"> 
+       
+	   
+	    <Form action="add_maschinenwartung.php" method="post">
+          <table style="width:100%; border-spacing:0;">
+            <tr>
+              <th>idMaschinen</th>
+              <th>Mitarbeiterid</th>
+              <th>Datum</th>
+              <th>Arbeitsbeschreibung</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="Maschienen_idMaschienenanan"/></td>
+              <td><input type="text" name="Mitarbeiter_idMitarbeiter"/></td>
+              <td><input type="text" name="Datum"/></td>
+              <td><input type="text" name="Arbeitsbeschreibung"/></td>
+            <tr>
+          </table>
+          <input type="submit" value="Add"/>
+        </Form>
+	
+		 
+		 <fieldset class="field_container"> 
                 <legend> <img src="images/arrow.gif"> Wartung </legend>
                 <div id="list_container">
                     <?php 
                         include('connect.php');
-                        include('list_wartung.php'); 
+                        include('list_maschinenwartung.php'); 
                     ?>
                 </div>
             </fieldset>

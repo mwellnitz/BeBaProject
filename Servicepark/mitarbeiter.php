@@ -38,9 +38,9 @@ include("connect.php");
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li class="selected"><a href="mitarbeiter.php">Mitarbeiter</a></li>
-          <li><a href="Maschinen.php">Maschinen</a></li>
-          <li><a href="Betriebsdaten.php">Betriebsdaten</a></li>
-          <li><a href="anmeldung.php">Sign In</a></li>
+          <li><a href="maschinen.php">Maschinen</a></li>
+          <li><a href="betriebsdaten.php">Betriebsdaten</a></li>
+          <li><a href="anmeldung.php">Anmeldung</a></li>
 		  <li><a href="logout.php">Logout</a></li>
         </ul>
       </div>
@@ -49,12 +49,28 @@ include("connect.php");
     <div id="site_content">
       <div id="content">
         <h2>Stammdaten</h2>
-        <p>Bereits erfasste Mitarbeiterstammdaten:</p>
-        <table style="width:100%; border-spacing:0;">
-		<Form action="add_member.php" method="post">
-         <tr><th>Name<input type="VARCHAR(32) " name="user"/></th><th>Telefon<input type="INTEGER"" name="telefon"/></th><th>Mitarbeitertyp<input type="INTEGER" name="typ"/></th><th>Rechtetyp<input type="INTEGER" name="recht"/></th><th>Passwort<input type="VARCHAR(32)" name="passwort"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		  </table>
+        <p>erfassen von Mitarbeiterstammdaten:</p>
+       
+	    <Form action="add_member.php" method="post">
+          <table style="width:100%; border-spacing:0;">
+            <tr>
+              <th>Name</th>
+              <th>Telefon</th>
+              <th>Mitarbeitertyp</th>
+              <th>Rechtetyp</th>
+              <th>Passwort</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="user"/></td>
+              <td><input type="text" name="telefon"/></td>
+              <td><input type="text" name="typ"/></td>
+              <td><input type="text" name="recht"/></td>
+              <td><input type="text" name="passwort"/></td>
+            <tr>
+          </table>
+          <input type="submit" value="Add"/>
+        </Form>
+		
 		  <table>
 		  <tr><th>Rechtetyp</th><th>Typ 1 = Administrator</th><th>Typ 2 = Service</th><th>Typ 3 = Nutzer</th></tr>
 		  <tr><th>Mitarbeitertyp</th><th>Typ 1 = Administrator</th><th>Typ 2 = Service</th><th>Typ 3 = Nutzer</th></tr>
@@ -86,3 +102,4 @@ include("connect.php");
 <?php
 		}
 ?>
+

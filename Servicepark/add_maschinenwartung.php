@@ -10,12 +10,12 @@ $Datum = $_POST["Datum"];
 $Arbeitsbeschreibung = $_POST["Arbeitsbeschreibung"];
 
 //Vergleich, wenn eines der genannzten Felder leer ist, dann Abbruch
-if($idMaschienenwartung == "" or $Maschienen_idMaschienenanan == "" or $Mitarbeiter_idMitarbeiter == "" or $Datum == "" or $Arbeitsbeschreibung == "") {
+if($Maschienen_idMaschienenanan == "" or $Mitarbeiter_idMitarbeiter == "" or $Datum == "" or $Arbeitsbeschreibung == "") {
 	echo "Du hast nicht alle Felder ausgefüllt...";
 	}else {
 	
-	$eintrag = "INSERT INTO `Maschienenwartung` (`idMaschienenwartung`, `Maschienen_idMaschienenanan`, `Mitarbeiter_idMitarbeiter`, `Datum`, `Arbeitsbeschreibung`) VALUES //Datenbank füllen
-				('$idMaschienenwartung','$Maschienen_idMaschienenanan','$Mitarbeiter_idMitarbeiter','$Datum','$Arbeitsbeschreibung')";
+	$eintrag = "INSERT INTO `Maschienenwartung` (`Maschienen_idMaschienenanan`, `Mitarbeiter_idMitarbeiter`, `Datum`, `Arbeitsbeschreibung`) VALUES //Datenbank füllen
+				('$Maschienen_idMaschienenanan','$Mitarbeiter_idMitarbeiter','$Datum','$Arbeitsbeschreibung')";
 
 
 	$eintragen	= mysql_query($eintrag);

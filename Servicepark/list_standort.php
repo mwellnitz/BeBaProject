@@ -2,7 +2,7 @@
 include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 		// display the list of all Standorte in table view
-        $sql = "SELECT * FROM Standorte ORDER BY idStandorte ASC";
+        $sql = "SELECT * FROM Standorte ORDER BY idStandorte ASC;";
         $query = mysql_query($sql) or die(mysql_error());
 
 echo "<table border = 1>";

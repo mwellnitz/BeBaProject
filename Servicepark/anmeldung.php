@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Sign In</title>
+  <title>Anmeldung</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -31,7 +31,7 @@
           <li><a href="mitarbeiter.php">Mitarbeiter</a></li>
           <li><a href="Maschinen.php">Maschinen</a></li>
           <li><a href="Betriebsdaten.php">Betriebsdaten</a></li>
-          <li class="selected"><a href="anmeldung.php">Sign In</a></li>
+          <li class="selected"><a href="anmeldung.php">Anmeldung</a></li>
 		  <li><a href="logout.php">Logout</a></li>
 		  </ul>
       </div>

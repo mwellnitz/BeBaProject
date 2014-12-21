@@ -7,12 +7,12 @@ $idKategorie = $_POST["idKategorie"];
 $name = $_POST["name"];
 
 //Vergleich, wenn eines der genannzten Felder leer ist, dann Abbruch
-if($idKategorie == "" or $name == "") {
+if($name == "") {
 	echo "Du hast nicht alle Felder ausgefüllt...";
 	}else {
 	
 	//Datenbank füllen
-	$eintrag = "INSERT INTO `Kategorie` (`idKategorie`, `name`) VALUES ('$idKategorie',`$name`))";
+	$eintrag = "INSERT INTO `Kategorie` (`name`) VALUES (`$name`);";
 
 
 	$eintragen	= mysql_query($eintrag);

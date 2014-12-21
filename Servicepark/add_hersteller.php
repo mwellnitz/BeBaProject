@@ -8,12 +8,12 @@ $Name = $_POST["Name"];
 $anschrift = $_POST["Anschrift"];
 
 //Vergleich, wenn eines der genannzten Felder leer ist, dann Abbruch
-if($idHersteller == "" or $Name == "" or $Anschrift == "" ) {
+if($Name == "" or $Anschrift == "" ) {
 	echo "Du hast nicht alle Felder ausgefüllt...";
 	}else {
 	
 	//Datenbank füllen
-	$eintrag = "INSERT INTO `Hersteller` (`idHersteller`, `Name`, `Anschrift`) VALUES ('$idHersteller',`$Name`,'$Anschrift'))";
+	$eintrag = "INSERT INTO `Hersteller` (`Name`, `Anschrift`) VALUES (`$Name`,'$Anschrift');";
 
 
 	$eintragen	= mysql_query($eintrag);

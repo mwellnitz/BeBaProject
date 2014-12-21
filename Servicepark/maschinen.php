@@ -38,9 +38,9 @@ include("connect.php");
         <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="mitarbeiter.php">Mitarbeiter</a></li>
-          <li class="selected"><a href="Maschinen.php">Maschinen</a></li>
-          <li><a href="Betriebsdaten.php">Betriebsdaten</a></li>
-          <li><a href="anmeldung.php">Sign In</a></li>
+          <li class="selected"><a href="maschinen.php">Maschinen</a></li>
+          <li><a href="betriebsdaten.php">Betriebsdaten</a></li>
+          <li><a href="anmeldung.php">Anmeldung</a></li>
 		  <li><a href="logout.php">Logout</a></li>
         </ul>
       </div>
@@ -50,11 +50,25 @@ include("connect.php");
       <div id="content">
         <h2>Stammdaten</h2>
         <p>Erfassen von Maschinen:</p>
-        <table style="width:100%; border-spacing:0;">
+        
 		<Form action="add_maschinen.php" method="post">
-          <tr><th>idMaschinen<input type="text" name="idMaschienenanan"/></th><th>StandortID<input type="text" name="Standorte_idStandorte"/></th><th>HerstellerID<input type="text" name="Hersteller_idHersteller"/></th><th>Kategorie<input type="text" name="Kategorie_idKategorie"/></th><th>Anschaffungsdatum<input type="text" name="Anschaffungsdatum"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		</table>
+          <table style="width:100%; border-spacing:0;">
+            <tr>
+              <th>StandortID</th>
+              <th>HerstellerID</th>
+              <th>Kategorie</th>
+              <th>Anschaffungsdatum</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="Standorte_idStandorte"/></td>
+              <td><input type="text" name="Hersteller_idHersteller"/></td>
+              <td><input type="text" name="Kategorie_idKategorie"/></td>
+              <td><input type="text" name="Anschaffungsdatum"/></td>
+            <tr>
+          </table>
+          <input type="submit" value="Add"/>
+        </Form>	
+		
 		<fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Maschinen </legend>
                 <div id="list_container">
@@ -69,11 +83,22 @@ include("connect.php");
 	<div id="site_content">
       <div id="content">
         <p>Erfassen von Herstellern:</p>
-        <table style="width:100%; border-spacing:0;">
+       
 		<Form action="add_hersteller.php" method="post">
-          <tr><th>idHersteller<input type="text" name="idhersteller"/></th><th>Name<input type="text" name="name"/></th><th>Anschrift<input type="text" name="anschrift"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		</table>
+          <table style="width:100%; border-spacing:0;">
+            <tr>
+              <th>Name</th>
+              <th>Anschrift</th>
+
+            </tr>
+            <tr>
+              <td><input type="text" name="name"/></td>
+              <td><input type="text" name="anschrift"/></td>
+            <tr>
+          </table>
+          <input type="submit" value="Add"/>
+        </Form>	
+
 		<fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Hersteller </legend>
                 <div id="list_container">
@@ -88,11 +113,20 @@ include("connect.php");
 	<div id="site_content">
       <div id="content">
         <p>Erfassen von Kategorie:</p>
-        <table style="width:100%; border-spacing:0;">
+        
 		<Form action="add_kategorie.php" method="post">
-          <tr><th>idKategorie<input type="text" name="idKategorie"/></th><th>Name<input type="text" name="name"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		</table>
+          <table style="width:100%; border-spacing:0;">
+            <tr>
+              <th>Name</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="name"/></td>
+            <tr>
+          </table>
+          <input type="submit" value="Add"/>
+        </Form>	
+		
+			
 		<fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Kategorie </legend>
                 <div id="list_container">
@@ -107,11 +141,22 @@ include("connect.php");
 	<div id="site_content">
       <div id="content">
         <p>Erfassen von Standorten:</p>
-        <table style="width:100%; border-spacing:0;">
-		<Form action="add_standort.php" method="post">
-          <tr><th>idStandorte<input type="text" name="idStandorte"/></th><th>Halle<input type="text" name="Halle"/></th><th>Platznr<input type="text" name="Platznr"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		</table>
+        
+<Form action="add_standort.php" method="post">
+          <table style="width:100%; border-spacing:0;">
+            <tr>
+              <th>Halle</th>
+              <th>Platznr</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="Halle"/></td>
+              <td><input type="text" name="Platznr"/></td>
+            <tr>
+          </table>
+          <input type="submit" value="Add"/>
+        </Form>	
+		
+		
 		<fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Standorte </legend>
                 <div id="list_container">

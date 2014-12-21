@@ -3,7 +3,7 @@ include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 
 		// display the list of all kategorie in table view
-        $sql = "SELECT * FROM Kategorie ORDER BY idKategorie ASC";
+        $sql = "SELECT * FROM Kategorie ORDER BY idKategorie ASC;";
         $query = mysql_query($sql) or die(mysql_error());
 
 echo "<table border = 1>";

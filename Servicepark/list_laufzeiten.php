@@ -3,7 +3,7 @@ include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 
 		// display the list of all Laufzeit in table view
-        $sql = "SELECT * FROM betriebszeiten ORDER BY idBetriebszeiten ASC";
+        $sql = "SELECT * FROM betriebszeiten ORDER BY idBetriebszeiten ASC;";
         $query = mysql_query($sql) or die(mysql_error());
 
 echo "<table border = 1>";

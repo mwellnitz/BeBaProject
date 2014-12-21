@@ -24,7 +24,7 @@ if($ID == "" or $user == "" or $telefon == "" or $mitarbeitertyp == "" or $recht
 	
 	
 	if($eintragen == true) {
-	<meta http-equiv="refresh" content="5, URL=mitarbeiter.php"> //wenn erfolgreich dann Weiterleitung...
+	<meta http-equiv="refresh" content="5; url=mitarbeiter.php"> //wenn erfolgreich dann Weiterleitung...
 	
 		}else{
 	

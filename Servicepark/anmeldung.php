@@ -25,16 +25,6 @@
 			</h2>
         </div>
       </div>
-      <div id="menubar">
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="mitarbeiter.php">Mitarbeiter</a></li>
-          <li><a href="Maschinen.php">Maschinen</a></li>
-          <li><a href="Betriebsdaten.php">Betriebsdaten</a></li>
-          <li class="selected"><a href="anmeldung.php">Anmeldung</a></li>
-		  <li><a href="logout.php">Logout</a></li>
-		  </ul>
-      </div>
     </div>
     <div id="content_header"></div>
     <div id="site_content">

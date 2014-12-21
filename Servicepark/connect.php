@@ -1,5 +1,3 @@
-//Aufbau der Datenbankverbindung
-
 <?php
 	$host = "localhost";
 	$user = "root";	

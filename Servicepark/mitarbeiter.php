@@ -1,6 +1,10 @@
 <?php
-session_start();
-include("connect.php");
+$SID = session_id();
+if(empty($SID)) { 
+   header('Location: anmeldung.php');
+   exit;
+}
+include("connect.php");	
 ?>
 
 

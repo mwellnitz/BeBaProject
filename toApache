@@ -1,0 +1,2 @@
+sudo cp -r Servicepark/* /var/www/html/Servicepark/
+sudo chown -R www-data:www-data /var/www/html/Servicepark/

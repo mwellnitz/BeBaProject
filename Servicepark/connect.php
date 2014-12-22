@@ -2,6 +2,7 @@
 session_start();
 ini_set( "display_errors", true );
 date_default_timezone_set( "Europe/Berlin" );  // http://www.php.net/manual/en/timezones.php
+include("mytools.php");
 
 //check if we are during the login procedere
 $myURL=$_SERVER["REQUEST_URI"];

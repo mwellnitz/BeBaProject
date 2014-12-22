@@ -1,6 +1,4 @@
 <?php
-//include("connect.php"); //Datenbankverbindung
-include("mytools.php");
 
 		// display the list of all kategorie in table view
         $sql = "SELECT * FROM kategorie ORDER BY idKategorie ASC;";
@@ -17,7 +15,7 @@ echo "<table border = 1>";
 	echo 'tr';
 		echo "<td>".$row['idKategorie']."</td>";
 		echo "<td>".$row['name']."</td>";
-		//<td><form action="delete_kategorie.php" method="get"><input type="hidden" name="idKategorie" value="5" /><input type="submit" value="Delete" /></td>
+		echo '<td><form action="delete_kategorie.php" method="post"><input type="hidden" name="idKategorie" value="'.$row['idKategorie'].'" /><input type="submit" value="Delete" /></form></td>';
 			
 	echo '</tr>';
 	}

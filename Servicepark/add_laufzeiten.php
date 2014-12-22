@@ -16,17 +16,19 @@ if($Maschienen_idMaschienenanan == "" or $Mitarbeiter_idMitarbeiter == "" or $La
 	//Datenbank füllen
 	$eintrag = "INSERT INTO `betriebszeiten` (`Maschienen_idMaschienenanan`, `Mitarbeiter_idMitarbeiter`, `Laufzeitvon`, `Laufzeitbis`) VALUES
 				('$Maschienen_idMaschienenanan', '$Mitarbeiter_idMitarbeiter', '$Laufzeitvon', '$Laufzeitbis');"; 
+        error_log("$eintrag");
 
 
 	$eintragen	= mysql_query($eintrag);
 	
 	
 	if($eintragen == true) {
-	<meta http-equiv="refresh" content="5, url=betriebsdaten.php"> //wenn erfolgreich dann Weiterleitung...
+	                header('Location: betriebsdaten.php');
 	
 		}else{
 	
-	echo "Fehler im System, automatische Weiterleitung" <meta http-equiv="refresh" content="5, url=betriebsdaten.php"> //wenn nicht erfolgreich dann Weiterleitung...
+	echo "Fehler im System, automatische Weiterleitung";
+        header('Location: betriebsdaten.php');
 	} 
 }
 

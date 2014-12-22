@@ -18,6 +18,7 @@ if($user == "" or $telefon == "" or $mitarbeitertyp == "" or $rechtetyp == "" or
         
         $eintrag = "INSERT INTO mitarbeiter (Name, Tele, Mitarbeitertyp, Rechte, PasswordDB) VALUES 
                                 ('$user', '$telefon', '$mitarbeitertyp','$rechtetyp', '$passwort');";
+        error_log("$eintrag");
 
 
         $eintragen      = mysql_query($eintrag);

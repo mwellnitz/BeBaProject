@@ -17,6 +17,7 @@ if($Standorte_idStandorte == "" or $Hersteller_idHersteller == "" or $Kategorie_
 	//Datenbank füllen
 	$eintrag = "INSERT INTO `maschienen` (Standorte_idStandorte, Hersteller_idHersteller, Kategorie_idKategorie, Anschaffungsdatum) 
 						VALUES ('$Standorte_idStandorte','$Hersteller_idHersteller','$Kategorie_idKategorie', '$Anschaffungsdatum');"; 
+        error_log("$eintrag");
 
 
 	$eintragen	= mysql_query($eintrag);

@@ -14,17 +14,19 @@ if($Name == "" or $Anschrift == "" ) {
 	
 	//Datenbank füllen
 	$eintrag = "INSERT INTO `hersteller` (`Name`, `Anschrift`) VALUES (`$Name`,'$Anschrift');";
+        error_log("$eintrag");
 
 
 	$eintragen	= mysql_query($eintrag);
 	
 	
 	if($eintragen == true) {
-	<meta http-equiv="refresh" content="5, url=maschinen.php"> //wenn erfolgreich dann Weiterleitung...
+                header('Location: maschinen.php');
 	
 		}else{
 	
-	echo "Fehler im System, automatische Weiterleitung" <meta http-equiv="refresh" content="5, url=maschinen.php"> //wenn nicht erfolgreich dann Weiterleitung...
+	echo "Fehler im System, automatische Weiterleitung";
+                header('Location: maschinen.php');
 	}
 }
 

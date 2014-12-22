@@ -1,6 +1,4 @@
 <?php
-//include("connect.php"); //Datenbankverbindung
-include("mytools.php");
 
 		// display the list of all Laufzeit in table view
         $sql = "SELECT * FROM betriebszeiten ORDER BY idBetriebszeiten ASC;";
@@ -8,7 +6,6 @@ include("mytools.php");
 
 echo "<table border = 1>";
 		echo '<tr>';
-		echo '<th>idBetriebszeiten</th>';
         echo '<th>idMaschinen</th>';
 		echo '<th>idMitarbeiter</th>';
 		echo '<th>Laufzeitvon</th>';
@@ -18,7 +15,6 @@ echo "<table border = 1>";
 		
 		while($row = mysql_fetch_array($query)) {
 	echo 'tr';
-		echo "<td>".$row['idBetriebszeiten']."</td>";
 		echo "<td>".$row['Maschienen_idMaschienenanan']."</td>";
 		echo "<td>".$row['Mitarbeiter_idMitarbeiter']."</td>";
 		echo "<td>".$row['Laufzeitvon']."</td>";

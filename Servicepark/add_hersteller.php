@@ -3,9 +3,8 @@
 include("connect.php"); //Aufbau Datenbankverbindung
 
 //deklarierte Variablen
-$idHersteller = $_POST["idHersteller"];
-$Name = $_POST["Name"];
-$anschrift = $_POST["Anschrift"];
+$Name = $_POST["name"];
+$Anschrift = $_POST["anschrift"];
 
 //Vergleich, wenn eines der genannzten Felder leer ist, dann Abbruch
 if($Name == "" or $Anschrift == "" ) {
@@ -13,7 +12,7 @@ if($Name == "" or $Anschrift == "" ) {
 	}else {
 	
 	//Datenbank füllen
-	$eintrag = "INSERT INTO `hersteller` (`Name`, `Anschrift`) VALUES (`$Name`,'$Anschrift');";
+	$eintrag = "INSERT INTO hersteller (Name, Anschrift) VALUES ('$Name','$Anschrift');";
         error_log("$eintrag");
 
 

@@ -45,27 +45,33 @@ include("connect.php");
     <div id="site_content">
       <div id="content">
         <h2>Stammdaten</h2>
-        <p>erfassen von Mitarbeiterstammdaten:</p>
+        <p>erfassen von Mitarbeiterstammdaten:
        
 	    <Form action="add_member.php" method="post">
           <table style="width:100%; border-spacing:0;">
             <tr>
               <th>Name</th>
-              <th>Telefon</th>
-              <th>Mitarbeitertyp</th>
-              <th>Rechtetyp</th>
-              <th>Passwort</th>
+              <td><input type="text" name="user"/></td>
             </tr>
             <tr>
-              <td><input type="text" name="user"/></td>
+              <th>Telefon</th>
               <td><input type="text" name="telefon"/></td>
-              <td><input type="text" name="typ"/></td>
-              <td><input type="text" name="recht"/></td>
-              <td><input type="text" name="passwort"/></td>
+            </tr>
             <tr>
+              <th>Mitarbeitertyp</th>
+              <td><input type="text" name="typ"/></td>
+            </tr>
+            <tr>
+              <th>Rechtetyp</th>
+              <td><input type="text" name="recht"/></td>
+            </tr>
+            <tr>
+              <th>Passwort</th>
+              <td><input type="text" name="passwort"/></td>
+            </tr>
           </table>
           <input type="submit" value="Add"/>
-        </Form>
+        </Form></p>
 		
 		  <table>
 		  <tr><th>Rechtetyp</th><th>Typ 1 = Administrator</th><th>Typ 2 = Service</th><th>Typ 3 = Nutzer</th></tr>

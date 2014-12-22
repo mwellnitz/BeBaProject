@@ -10,7 +10,7 @@ echo "<table border = 1>";
         echo '<th>Mitarbeitertyp</th>';
 		echo '<th>Rechtetyp</th>';
 		echo '<th>Passwort</th>';
-	    echo '<th>Delete member</th>';
+//	    echo '<th>Mitarbeiter<br>löschen</th>';
 	echo '<tr>';
 		echo $query;
 		while($row = mysql_fetch_array($query)) {
@@ -20,9 +20,7 @@ echo "<table border = 1>";
 		echo "<td>".$row['Mitarbeitertyp']."</td>";
 		echo "<td>".$row['Rechte']."</td>";
 		echo "<td>".$row['PasswordDB']."</td>";
-		echo "<td>";
-		//echo button("Löschen","delete_member.php" , "$row['idMitarbeiter']","");
-		echo "</td>";
+//		echo '<td><form action="delete_member.php" method="post"><input type="hidden" name="idMaschienenwartung" value="'.$row['Name'].'" /><input type="submit" value="Delete" /></form></td>';
 			
 	echo '</tr>';
 	}

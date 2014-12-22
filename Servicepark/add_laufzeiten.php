@@ -14,7 +14,7 @@ if($Maschienen_idMaschienenanan == "" or $Mitarbeiter_idMitarbeiter == "" or $La
 	echo "Du hast nicht alle Felder ausgefüllt...";
 	}else {
 	//Datenbank füllen
-	$eintrag = "INSERT INTO `betriebszeiten` (`Maschienen_idMaschienenanan`, `Mitarbeiter_idMitarbeiter`, `Laufzeitvon`, `Laufzeitbis`) VALUES
+	$eintrag = "INSERT INTO betriebszeiten (Maschienen_idMaschienenanan, Mitarbeiter_idMitarbeiter, Laufzeitvon, Laufzeitbis) VALUES
 				('$Maschienen_idMaschienenanan', '$Mitarbeiter_idMitarbeiter', '$Laufzeitvon', '$Laufzeitbis');"; 
         error_log("$eintrag");
 

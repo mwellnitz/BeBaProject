@@ -11,10 +11,10 @@ echo "<table border = 1>";
 		echo '<th>Kategorie_idKategorie</th>';
 		echo '<th>Anschaffungsdatum</th>';
 	    echo '<th>Delete member</th>';
-	echo '<tr>';
+	echo '</tr>';
 		
 		while($row = mysql_fetch_array($query)) {
-	echo 'tr';
+	echo '<tr>';
 		echo "<td>".$row['idMaschienenanan']."</td>";
 		echo "<td>".$row['Standorte_idStandorte']."</td>";
 		echo "<td>".$row['Hersteller_idHersteller']."</td>";

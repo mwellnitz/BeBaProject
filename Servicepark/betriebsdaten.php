@@ -45,11 +45,45 @@ include("connect.php");
       <div id="content">
         <h1>Laufzeiten und Wartungsvorgänge</h1>
 		<p>Laufzeiten erfassen:</p>
+	<Form action="add_laufzeiten.php" method="post">
         <table style="width:100%; border-spacing:0;">
-		<Form action="add_laufzeiten.php" method="post">
-          <tr><th>idBetriebszeiten<input type="text" name="idBetriebszeiten"/></th><th>idMaschinen<input type="text" name="Maschienen_idMaschienenanan"/></th><th>Mitarbeiterid<input type="text" name="Mitarbeiter_idMitarbeiter"/></th><th>Laufzeitvon<input type="text" name="Laufzeitvon"/></th><th>Laufzeitbis<input type="text" name="Laufzeitbis"/></th><th><input type="submit" value="Add"/></th><th></th></tr>
-          </form>
-		  </table>
+          <tr>
+		<th>idBetriebszeiten</th>
+		<td>
+		    <input type="text" name="idBetriebszeiten"/>
+		</td>
+	  </tr>
+	  <tr>
+		<th>idMaschinen</th>
+		<td>
+		    <input type="text" name="Maschienen_idMaschienenanan"/>
+		</td>
+	  </tr>
+	  <tr>
+		<th>Mitarbeiterid</th>
+		<td>
+		<input type="text" name="Mitarbeiter_idMitarbeiter"/>
+		</td>
+	  </tr>
+	  <tr>
+		<th>Laufzeitvon</th>
+		<td>
+		<input type="text" name="Laufzeitvon"/>
+		</td>
+	  </tr>
+	  <tr>
+		<th>Laufzeitbis</th>
+		<td>
+		<input type="text" name="Laufzeitbis"/>
+		</td>
+	  </tr>
+	  <tr>
+		<th></th>
+		<td align="right"><input type="submit" value="Hinzufügen"/>
+		</td>
+	  </tr>
+	</table>
+	</form>
 		<fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Laufzeit </legend>
                 <div id="list_container">

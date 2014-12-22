@@ -11,10 +11,10 @@ echo "<table border = 1>";
 		echo '<th>Laufzeitvon</th>';
 		echo '<th>Laufzeitbis</th>';
 	    echo '<th>Delete Customer</th>';
-	echo '<tr>';
+	echo '</tr>';
 		
 		while($row = mysql_fetch_array($query)) {
-	echo 'tr';
+	echo '<tr>';
 		echo "<td>".$row['Maschienen_idMaschienenanan']."</td>";
 		echo "<td>".$row['Mitarbeiter_idMitarbeiter']."</td>";
 		echo "<td>".$row['Laufzeitvon']."</td>";

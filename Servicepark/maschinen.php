@@ -50,18 +50,26 @@ include("connect.php");
           <table style="width:100%; border-spacing:0;">
             <tr>
               <th>StandortID</th>
-              <th>HerstellerID</th>
-              <th>Kategorie</th>
-              <th>Anschaffungsdatum</th>
+              <td><input type="text" name="Standorte_idStandorte"/></td>
             </tr>
             <tr>
-              <td><input type="text" name="Standorte_idStandorte"/></td>
+              <th>HerstellerID</th>
               <td><input type="text" name="Hersteller_idHersteller"/></td>
-              <td><input type="text" name="Kategorie_idKategorie"/></td>
-              <td><input type="text" name="Anschaffungsdatum"/></td>
+            </tr>
             <tr>
+              <th>Kategorie</th>
+              <td><input type="text" name="Kategorie_idKategorie"/></td>
+            </tr>
+            <tr>
+              <th>Anschaffungsdatum</th>
+              <td><input type="text" name="Anschaffungsdatum"/></td>
+            </tr>
+            <tr>
+              <th></th>
+              <td align="right"><input type="submit" value="Hinzufügen"/></td>
+            </tr>
           </table>
-          <input type="submit" value="Add"/>
+          
         </Form>	
 		
 		<fieldset class="field_container">

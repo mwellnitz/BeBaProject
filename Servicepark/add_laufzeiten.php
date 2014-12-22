@@ -3,7 +3,6 @@
 include("connect.php"); //Aufbau Datenbankverbindung
 
 //deklarierte Variablen
-$idBetriebszeiten = $_POST["idBetriebszeiten"];
 $Maschienen_idMaschienenanan = $_POST["Maschienen_idMaschienenanan"];
 $Mitarbeiter_idMitarbeiter = $_POST["Mitarbeiter_idMitarbeiter"];
 $Laufzeitvon = $_POST["Laufzeitvon"];

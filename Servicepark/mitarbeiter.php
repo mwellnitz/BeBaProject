@@ -79,8 +79,12 @@ include("connect.php");
               <th>Passwort</th>
               <td><input type="text" name="passwort"/></td>
             </tr>
+            <tr>
+              <th></th>
+              <td align="right"><input type="submit" value="Hinzufügen"/></td>
+            </tr>
           </table>
-          <input type="submit" value="Add"/>
+          
         </Form></p>
 		  <fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Mitarbeiter </legend>

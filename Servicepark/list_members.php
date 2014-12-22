@@ -7,12 +7,11 @@ echo "<table border = 1>";
 		echo '<tr>';
 		echo '<th>Name</th>';
         echo '<th>Telefon</th>';
-        echo '<th>Mitarbeitertyp</th>';
-		echo '<th>Rechtetyp</th>';
+        echo '<th>Mitarbeiterrolle</th>';
+		echo '<th>Anwenderrolle</th>';
 		echo '<th>Passwort</th>';
 //	    echo '<th>Mitarbeiter<br>löschen</th>';
 	echo '<tr>';
-		echo $query;
 		while($row = mysql_fetch_array($query)) {
 	echo '<tr>';
 		echo "<td>".$row['Name']."</td>";     			//auf groß und kleinschreiben achten (in der DB)

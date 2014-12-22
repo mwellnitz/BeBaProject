@@ -12,7 +12,7 @@ if($name == "") {
 	}else {
 	
 	//Datenbank füllen
-	$eintrag = "INSERT INTO `Kategorie` (`name`) VALUES (`$name`);";
+	$eintrag = "INSERT INTO `kategorie` (`name`) VALUES (`$name`);";
 
 
 	$eintragen	= mysql_query($eintrag);

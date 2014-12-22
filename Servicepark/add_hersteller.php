@@ -13,7 +13,7 @@ if($Name == "" or $Anschrift == "" ) {
 	}else {
 	
 	//Datenbank füllen
-	$eintrag = "INSERT INTO `Hersteller` (`Name`, `Anschrift`) VALUES (`$Name`,'$Anschrift');";
+	$eintrag = "INSERT INTO `hersteller` (`Name`, `Anschrift`) VALUES (`$Name`,'$Anschrift');";
 
 
 	$eintragen	= mysql_query($eintrag);

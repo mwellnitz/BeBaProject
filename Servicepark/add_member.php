@@ -16,7 +16,7 @@ if($user == "" or $telefon == "" or $mitarbeitertyp == "" or $rechtetyp == "" or
         echo "Du hast nicht alle Felder ausgefüllt...";
         }else{
         
-        $eintrag = "INSERT INTO Mitarbeiter (Name, Tele, Mitarbeitertyp, Rechte, PasswordDB) VALUES 
+        $eintrag = "INSERT INTO mitarbeiter (Name, Tele, Mitarbeitertyp, Rechte, PasswordDB) VALUES 
                                 ('$user', '$telefon', '$mitarbeitertyp','$rechtetyp', '$passwort');";
 
 

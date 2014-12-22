@@ -1,5 +1,5 @@
 <?php
-include("connect.php"); //Datenbankverbindung
+//include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 		// display the list of all Wartung in table view
         $sql = "SELECT * FROM maschienenwartung ORDER BY idMaschienenwartung ASC;";

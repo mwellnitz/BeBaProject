@@ -1,5 +1,5 @@
 <?php
-include("connect.php"); //Datenbankverbindung
+//include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 		// display the list of all maschines in table view
         $sql = "SELECT * FROM maschienen ORDER BY idMaschienenanan ASC;";

@@ -1,10 +1,7 @@
 <?php
-session_start();
 include("connect.php");	
-
 ?>
 
-//Beginn geschützter Bereich
 <!DOCTYPE HTML>
 <html>
 
@@ -12,7 +9,7 @@ include("connect.php");
   <title>Betriebsdaten</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
@@ -34,12 +31,10 @@ include("connect.php");
       </div>
       <div id="menubar">
         <ul id="menu">
-          <li><a href="index.html">Home</a></li>
           <li><a href="mitarbeiter.php">Mitarbeiter</a></li>
-          <li><a href="Maschinen.php">Maschinen</a></li>
-          <li class="selected"><a href="Betriebsdaten.php">Betriebsdaten</a></li>
-          <li><a href="anmeldung.php">Anmeldung</a></li>
-		  <li><a href="logout.php">Logout</a></li>
+          <li><a href="maschinen.php">Maschinen</a></li>
+          <li class="selected"><a href="betriebsdaten.php">Betriebsdaten</a></li>
+	  <li><a href="logout.php">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -48,7 +43,7 @@ include("connect.php");
       <div id="sidebar_container">
       </div>
       <div id="content">
-        <h1>Laufzeiten und Wartungsvorgänge</h1>
+        <h1>Laufzeiten und WartungsvorgÃ¤nge</h1>
 		<p>Laufzeiten erfassen:</p>
         <table style="width:100%; border-spacing:0;">
 		<Form action="add_laufzeiten.php" method="post">
@@ -59,7 +54,6 @@ include("connect.php");
                 <legend> <img src="images/arrow.gif"> Laufzeit </legend>
                 <div id="list_container">
                     <?php 
-                        include('connect.php');
                         include('list_laufzeiten.php'); 
                     ?>
                 </div>
@@ -96,7 +90,6 @@ include("connect.php");
                 <legend> <img src="images/arrow.gif"> Wartung </legend>
                 <div id="list_container">
                     <?php 
-                        include('connect.php');
                         include('list_maschinenwartung.php'); 
                     ?>
                 </div>
@@ -112,7 +105,6 @@ include("connect.php");
 </html>
 
 
-//Ende geschützter Bereich, wenn nicht angemeldet, dann einloggen
 <?php
 	if(!isset($_SESSION[$user])) {
 		}else {

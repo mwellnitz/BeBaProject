@@ -5,7 +5,7 @@
   <title>Anmeldung</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
@@ -33,7 +33,7 @@
       <div id="content">
 	  <form method="POST" action="login.php">
         <h1>Anmeldung</h1>
-        <p>Bitte geben Sie Benutzername, sowie Passwort ein und drücken "Sign In":</p>       
+        <p>Bitte geben Sie Benutzername, sowie Passwort ein und drÃ¼cken "Sign In":</p>       
           <div class="form_settings">
             <p><span>Benutzername</span><input type="text" name="user"/></p>
             <p><span>Passwort</span><input type="password" name="passwort"/></p>

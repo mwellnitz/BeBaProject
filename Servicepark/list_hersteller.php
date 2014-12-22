@@ -1,9 +1,9 @@
 <?php
-include("connect.php"); //Datenbankverbindung
+//include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 
 		// display the list of all customer in table view
-        $sql = "SELECT * FROM Hersteller ORDER BY idHersteller ASC;";
+        $sql = "SELECT * FROM hersteller ORDER BY idHersteller ASC;";
         $query = mysql_query($sql) or die(mysql_error());
 
 echo "<table border = 1>";

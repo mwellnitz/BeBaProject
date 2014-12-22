@@ -12,7 +12,7 @@ if($Halle == "" or $Platznr == "") {
 	echo "Du hast nicht alle Felder ausgefüllt...";
 	}else {
 	
-	$eintrag = "INSERT INTO `Standorte` (`Halle`, 'Platznr') VALUES (`$Halle`, '$Platznr'))";  //Datenbank füllen
+	$eintrag = "INSERT INTO `standorte` (`Halle`, 'Platznr') VALUES (`$Halle`, '$Platznr'))";  //Datenbank füllen
 
 
 	$eintragen	= mysql_query($eintrag);

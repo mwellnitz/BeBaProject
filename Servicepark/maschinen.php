@@ -1,9 +1,4 @@
 <?php
-$SID = session_id();
-if(empty($SID)) { 
-   header('Location: anmeldung.php');
-   exit;
-}
 include("connect.php");	
 ?>
 
@@ -14,7 +9,6 @@ include("connect.php");
   <title>Maschinen</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
   <script type="text/javascript" src="js/script.js"></script>
@@ -39,12 +33,10 @@ include("connect.php");
       </div>
       <div id="menubar">
         <ul id="menu">
-          <li><a href="index.html">Home</a></li>
           <li><a href="mitarbeiter.php">Mitarbeiter</a></li>
           <li class="selected"><a href="maschinen.php">Maschinen</a></li>
           <li><a href="betriebsdaten.php">Betriebsdaten</a></li>
-          <li><a href="anmeldung.php">Anmeldung</a></li>
-		  <li><a href="logout.php">Logout</a></li>
+	  <li><a href="logout.php">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -76,7 +68,6 @@ include("connect.php");
                 <legend> <img src="images/arrow.gif"> Maschinen </legend>
                 <div id="list_container">
                     <?php 
-                        include('connect.php');
                         include('list_maschinen.php'); 
                     ?>
                 </div>
@@ -106,7 +97,6 @@ include("connect.php");
                 <legend> <img src="images/arrow.gif"> Hersteller </legend>
                 <div id="list_container">
                     <?php 
-                        include('connect.php');
                         include('list_hersteller.php'); 
                     ?>
                 </div>
@@ -134,7 +124,6 @@ include("connect.php");
                 <legend> <img src="images/arrow.gif"> Kategorie </legend>
                 <div id="list_container">
                     <?php 
-                        include('connect.php');
                         include('list_kategorie.php'); 
                     ?>
                 </div>
@@ -164,7 +153,6 @@ include("connect.php");
                 <legend> <img src="images/arrow.gif"> Standorte </legend>
                 <div id="list_container">
                     <?php 
-                        include('connect.php');
                         include('list_standort.php'); 
                     ?>
                 </div>

@@ -1,5 +1,5 @@
 <?php
-include("connect.php"); //Datenbankverbindung
+//include("connect.php"); //Datenbankverbindung
 include("mytools.php");
 
 		// display the list of all Laufzeit in table view

@@ -16,7 +16,7 @@ echo "<table border = 1>";
 		echo "<td>".$row['idHersteller']."</td>";
 		echo "<td>".$row['Name']."</td>";
 		echo "<td>".$row['Anschrift']."</td>";
-		echo '<td><form action="delete_hersteller.php" method="post"><input type="hidden" name="idHersteller" value="'.$row = mysql_fetch_array($query).'" /><input type="submit" value="Delete" /></form></td>';
+		echo '<td><form action="delete_hersteller.php" method="post"><input type="hidden" name="idHersteller" value="'.$row['idHersteller'].'" /><input type="submit" value="Delete" /></form></td>';
 		echo "</td>";	
 	echo '</tr>';
 	}

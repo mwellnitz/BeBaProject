@@ -58,12 +58,22 @@ include("connect.php");
               <td><input type="text" name="telefon"/></td>
             </tr>
             <tr>
-              <th>Mitarbeitertyp</th>
-              <td><input type="text" name="typ"/></td>
+              <th>Mitarbeiterrolle</th>
+              <td><select name="typ"/>
+                       <option value="1">Administrator (1)</option>
+                       <option value="2">Service (2)</option>
+                       <option value="3">Nutzer (3)</option>
+                  </select>
+              </td>
             </tr>
             <tr>
-              <th>Rechtetyp</th>
-              <td><input type="text" name="recht"/></td>
+              <th>Anwenderrolle</th>
+              <td><select name="recht"/>
+                       <option value="1">Administrator (1)</option>
+                       <option value="2">Service (2)</option>
+                       <option value="3">Nutzer (3)</option>
+                  </select>
+              </td>
             </tr>
             <tr>
               <th>Passwort</th>
@@ -72,11 +82,6 @@ include("connect.php");
           </table>
           <input type="submit" value="Add"/>
         </Form></p>
-		
-		  <table>
-		  <tr><th>Rechtetyp</th><th>Typ 1 = Administrator</th><th>Typ 2 = Service</th><th>Typ 3 = Nutzer</th></tr>
-		  <tr><th>Mitarbeitertyp</th><th>Typ 1 = Administrator</th><th>Typ 2 = Service</th><th>Typ 3 = Nutzer</th></tr>
-		  </table>
 		  <fieldset class="field_container">
                 <legend> <img src="images/arrow.gif"> Mitarbeiter </legend>
                 <div id="list_container">

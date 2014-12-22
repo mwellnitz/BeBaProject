@@ -1,6 +1,7 @@
  <?php
 	include("connect.php");//Datenbankverbindung
-		$loeschen = "DELETE FROM Betriebszeiten WHERE idBetriebszeiten = " . mysql_real_escape_string($_GET["idBetriebszeiten"]) . " LIMIT 1"; //delete-Anweisung
+		$loeschen = "DELETE FROM betriebszeiten WHERE idBetriebszeiten = " . mysql_real_escape_string($_POST["idBetriebszeiten"]) . " LIMIT 1;"; //delete-Anweisung
+                error_log("[INFO] delete_laufzeiten.php : $loeschen");
 		$sql_befehl = mysql_query($loeschen);
 			if(mysql_affected_rows() == 1) {
 			
@@ -14,5 +15,5 @@
     }
 	
 		// und zurück zur Anzeige
-		header("location: maschinen.php");
+		header("location: betriebsdaten.php");
  ?>

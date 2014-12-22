@@ -1,6 +1,6 @@
  <?php
 	include("connect.php");//Datenbankverbindung
-		$loeschen = "DELETE FROM Kategorie WHERE idKategorie = " . mysql_real_escape_string($_GET["idKategorie"]) . " LIMIT 1"; //delete-Anweisung
+		$loeschen = "DELETE FROM kategorie WHERE idKategorie = " . mysql_real_escape_string($_GET["idKategorie"]) . " LIMIT 1;"; //delete-Anweisung
 		$sql_befehl = mysql_query($loeschen);
 			if(mysql_affected_rows() == 1) {
 			

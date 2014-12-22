@@ -23,7 +23,7 @@ echo "<table border = 1>";
 		echo "<td>".$row['Mitarbeiter_idMitarbeiter']."</td>";
 		echo "<td>".$row['Laufzeitvon']."</td>";
 		echo "<td>".$row['Laufzeitbis']."</td>";
-		//<td><form action="delete_laufzeiten.php" method="get"><input type="hidden" name="idBetriebszeiten" value="5" /><input type="submit" value="Delete" /></td>
+		echo '<td><form action="delete_laufzeiten.php" method="POST"><input type="hidden" name="idBetriebszeiten" value="'.$row['idBetriebszeiten'].'" /><input type="submit" value="Delete" /></FORM></td>';
 			
 	echo '</tr>';
 	}

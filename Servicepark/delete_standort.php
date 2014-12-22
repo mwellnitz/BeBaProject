@@ -1,6 +1,6 @@
  <?php
 	include("connect.php"); //Datenbankverbindung
-		$loeschen = "DELETE FROM Standorte WHERE idStandorte = " . mysql_real_escape_string($_GET["idStandorte"]) . " LIMIT 1"; //delete-Anweisung
+		$loeschen = "DELETE FROM standorte WHERE idStandorte = " . mysql_real_escape_string($_GET["idStandorte"]) . " LIMIT 1;"; //delete-Anweisung
 		$sql_befehl = mysql_query($loeschen);
 			if(mysql_affected_rows() == 1) {
 			

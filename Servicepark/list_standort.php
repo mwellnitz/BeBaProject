@@ -9,10 +9,10 @@ echo "<table border = 1>";
         echo '<th>Halle</th>';
 		echo '<th>Platznr</th>';
 	    echo '<th>Delete Customer</th>';
-	echo '<tr>';
+	echo '</tr>';
 		
 		while($row = mysql_fetch_array($query)) {
-	echo 'tr';
+	echo '<tr>';
 		echo "<td>".$row['idStandorte']."</td>";
 		echo "<td>".$row['Halle']."</td>";
 		echo "<td>".$row['Platznr']."</td>";

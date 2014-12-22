@@ -9,10 +9,10 @@ echo "<table border = 1>";
 		echo '<th>idKategorie</th>';
         echo '<th>Name</th>';
 	    echo '<th>Delete Customer</th>';
-	echo '<tr>';
+	echo '</tr>';
 		
 		while($row = mysql_fetch_array($query)) {
-	echo 'tr';
+	echo '<tr>';
 		echo "<td>".$row['idKategorie']."</td>";
 		echo "<td>".$row['name']."</td>";
 		echo '<td><form action="delete_kategorie.php" method="post"><input type="hidden" name="idKategorie" value="'.$row['idKategorie'].'" /><input type="submit" value="Delete" /></form></td>';

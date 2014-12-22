@@ -11,7 +11,7 @@ echo "<table border = 1>";
 		echo '<th>Datum</th>';
 		echo '<th>Arbeitsbeschreibung</th>';
 	    echo '<th>Delete Customer</th>';
-	echo '<tr>';
+	echo '</tr>';
 		
 		while($row = mysql_fetch_array($query)) {
 	echo '<tr>';

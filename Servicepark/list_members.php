@@ -11,7 +11,7 @@ echo "<table border = 1>";
 		echo '<th>Anwenderrolle</th>';
 		echo '<th>Passwort</th>';
 //	    echo '<th>Mitarbeiter<br>löschen</th>';
-	echo '<tr>';
+	echo '</tr>';
 		while($row = mysql_fetch_array($query)) {
 	echo '<tr>';
 		echo "<td>".$row['Name']."</td>";     			//auf groß und kleinschreiben achten (in der DB)

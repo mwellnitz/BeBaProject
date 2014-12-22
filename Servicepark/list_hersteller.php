@@ -11,9 +11,6 @@ echo "<table border = 1>";
 		echo '<th>Anschrift</th>';
 		echo '<th>Delete Customer</th>';
 	echo '</tr>';
-		
-		echo $query;
-		
 		while($row = mysql_fetch_array($query)) {
 	echo '<tr>';
 		echo "<td>".$row['idHersteller']."</td>";
